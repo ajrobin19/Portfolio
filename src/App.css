@@ -1,32 +1,87 @@
-.App {
-  text-align: center;
+/*
+Whole Page
+*/
+body{
+  background-color: #141414;
+  color: #FFFFFF;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+/*
+Top of Page
+*/
+#top{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 60%;
+  width: 100%;
+  overflow: hidden;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#video-background {
+  z-index: -1;
+  width: 100%;
+  box-shadow: inset 0 0 10px white;
+}
+
+#topInfo{
+  position: absolute;
+  top: 8em;
+  left: 5%;
+  background: rgb(20,20,20, 0.75);
+  padding: 30px;
+  border-radius: 15px;
+  z-index: 1;
+}
+
+#topInfo .logo{
+  height: 2.5em;
+}
+
+#menu{
+  width: 100%;
+  background: #141414;
   color: white;
+  position: fixed;
+  top: 0px;
+  z-index: 2;
 }
 
-.App-link {
-  color: #61dafb;
+#menu .logo{
+  height: 4em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/*
+Screen Breaks
+*/
+@media screen and (max-width: 749px) {
+  #topInfo{
+    top: 4em;
+    padding: 10px;
   }
-  to {
-    transform: rotate(360deg);
+
+  #menu .logo{
+    height: 2em;
+  }
+
+  #topInfo .logo{
+    height: 1.5em;
+  }
+
+  .App{
+    font-size: small;
+  }
+}
+
+@media screen and (min-width: 750px) and  (max-width: 999px){
+  #topInfo{
+    top: 7em;
+    padding: 10px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #video-background{
+    transform: translateY(-150px);
   }
 }
