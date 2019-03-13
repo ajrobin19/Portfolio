@@ -3,16 +3,16 @@ Whole Page
 */
 body{
   background-color: #141414;
-  color: white;
+  color: #FFFFFF;
 }
 a{
-  color: white;
+  color: #FFFFFF;
 }
 a:hover{
-  color: white;
+  color: #FFFFFF;
 }
 a:visted{
-  color: white;
+  color: #FFFFFF;
 }
 
 /*
@@ -26,13 +26,13 @@ Top of Page
   width: 100%;
   overflow: hidden;
   z-index: -1;
-  color: white;
+  color: #FFFFFF;
 }
 
 #video-background {
   z-index: -2;
   width: 100%;
-  box-shadow: inset 0 0 10px white;
+  box-shadow: inset 0 0 10px #FFFFFF;
 }
 
 #topInfo{
@@ -51,7 +51,7 @@ Top of Page
 
 #menu{
   width: 100%;
-  color: white;
+  color: #FFFFFF;
   position: fixed;
   top: 0px;
   z-index: 10;
@@ -65,7 +65,7 @@ Top of Page
 Body
 */
 #bottom{
-  color: white;
+  color: #FFFFFF;
   margin-top: 60vh;
   z-index: 2;
 }
@@ -95,7 +95,7 @@ Body
   margin: auto 15px;
   font-size: 25px;
   cursor: pointer;
-  color: white;
+  color: #FFFFFF;
   flex: 0 0 auto;
   display: inline-flex;
 }
@@ -120,7 +120,7 @@ Body
   position: absolute;
   padding: 5px;
   cursor: pointer;
-  color: white;
+  color: #FFFFFF;
   z-index: 2;
   display: none;
 }
