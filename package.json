@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://ajrobin19.github.io/Project-2-Neighborhood-Map/",
+  "homepage": "https://ajrobin19.github.io/portfolio/",
   "private": true,
   "dependencies": {
     "gh-pages": "^2.0.1",
