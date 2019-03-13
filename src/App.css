@@ -26,6 +26,7 @@ Top of Page
   width: 100%;
   overflow: hidden;
   z-index: -1;
+  color: white;
 }
 
 #video-background {
@@ -64,6 +65,7 @@ Top of Page
 Body
 */
 #bottom{
+  color: white;
   margin-top: 60vh;
   z-index: 2;
 }
