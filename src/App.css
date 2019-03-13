@@ -1,17 +1,17 @@
 /*
 Whole Page
 */
-body{
+.App{
   background-color: #141414;
   color: white;
 }
-a{
+.App a{
   color: white;
 }
-a:hover{
+.App a:hover{
   color: white;
 }
-a:visted{
+.App a:visted{
   color: white;
 }
 
