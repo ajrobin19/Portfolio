@@ -1,0 +1,88 @@
+{
+   "name": "Coding Skills Rankings",
+   "reference": "skills",
+   "left": "skillsLeft",
+   "right": "skillsRight",
+   "results":[
+      {   
+         "name" : "HTML",
+         "reference": "html",
+         "backgroundColor": "#4796D7",
+         "backgroundImage": "./media/html.png",
+         "backgroundSize": "60%",
+         "backgroundPosition": "top center",
+         "tools" : [
+            ""
+         ],
+         "image": "./media/front-end-certificate.png",
+         "image2": "./media/full-stack-certificate.png",
+         "duration" : "December 2017 - September 2018, November 2018 - Febuary 2019",
+         "comments": "To obtain the full Front-End Web Developer Nanodgree Scholorship through Google, I had to complete a 3-month challenge course and be within the top 10% of the 25,000 applicants."
+      },
+      {   
+         "name" : "Javascript",
+         "reference": "javascript",
+         "backgroundColor": "#F7E14B",
+         "backgroundImage": "./media/javascript.png",
+         "backgroundSize": "80%",
+         "backgroundPosition": "bottom 20% center",
+         "tools" : [
+            "React",
+            "JQuery"
+
+
+         ],
+         "image": "./media/ksu_diploma.jpeg",
+         "duration" : "January 2010 - December 2014",
+         "comments": "As electives, I took CIS 111: Intro to Programming & CIS 200: Programming Fundamentals."
+      },
+      {   
+         "name" : "Python",
+         "reference": "python",
+         "backgroundColor": "#FFFFFF",
+         "backgroundImage": "./media/python.png",
+         "backgroundSize": "100%",
+         "backgroundPosition": "center",
+         "tools" : [
+            "High School Diploma", 
+            "E-Communications Web Design Certificate",
+            "Won a Pixel, top prize given at the annual eMagine Media Festival, in 2008 for Best Topic website."
+         ],
+         "image": "./media/onhs_diploma.jpeg",
+         "duration" : "August 2006 - May 2008",
+         "comments": "I was involved in a very unique E-Comm Web Design program. In this program, I learned some of the basics of web design and development and a lasting love for creating web content."
+      },
+      {   
+         "name" : "CSS",
+         "reference": "css",
+         "backgroundColor": "#D5D5D1",
+         "backgroundImage": "./media/css.svg",
+         "backgroundSize": "40%",
+         "backgroundPosition": "top center",
+         "degrees" : [
+            "High School Diploma", 
+            "E-Communications Web Design Certificate",
+            "Won a Pixel, top prize given at the annual eMagine Media Festival, in 2008 for Best Topic website."
+         ],
+         "image": "./media/onhs_diploma.jpeg",
+         "duration" : "August 2006 - May 2008",
+         "comments": "I was involved in a very unique E-Comm Web Design program. In this program, I learned some of the basics of web design and development and a lasting love for creating web content."
+      },
+      {   
+         "name" : "Other",
+         "reference": "other",
+         "backgroundColor": "#D5D5D1",
+         "backgroundImage": "./media/coding.png",
+         "backgroundSize": "90%",
+         "backgroundPosition": "center",
+         "degrees" : [
+            "High School Diploma", 
+            "E-Communications Web Design Certificate",
+            "Won a Pixel, top prize given at the annual eMagine Media Festival, in 2008 for Best Topic website."
+         ],
+         "image": "./media/onhs_diploma.jpeg",
+         "duration" : "August 2006 - May 2008",
+         "comments": "I was involved in a very unique E-Comm Web Design program. In this program, I learned some of the basics of web design and development and a lasting love for creating web content."
+      }
+   ]
+}

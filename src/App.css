@@ -43,6 +43,7 @@ Top of Page
   padding: 30px;
   border-radius: 15px;
   z-index: 0;
+  color: #FFFFFF;
 }
 
 #topInfo .logo{
@@ -163,6 +164,14 @@ Body
   width: calc(100% - 250px)
 }
 
+.icons{
+  text-align: center;
+}
+
+.fai{
+  margin:0 10px;
+}
+
 .exit{
   font-size: 40px;
   margin: 5px 20px;
@@ -175,26 +184,48 @@ Body
 }
 
 .degree{
-  width: 200px;
   position: absolute;
   top: 100px;
   right: 10px;
+  z-index: 1;
+}
+
+.degree img{
+  width: 200px;
 }
 
 .degree2{
-  width: 200px;
   position: absolute;
   top: 300px;
   right: 10px;
+  z-index: 1;
+}
+
+.degree2 img{
+  width: 200px;
 }
 
 .degree:hover, .degree2:hover{
-  width: 500px;
   z-index: 10;
+}
+
+.degree img:hover, .degree2 img:hover{
+  width: 500px;
 }
 
 .degree2:hover{
   top: 100px;
+}
+
+.enlarge{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  color: gray;
+}
+.degree:hover>.enlarge, .degree2:hover>.enlarge{
+  display: none;
 }
 /*
 Screen Breaks
