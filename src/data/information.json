@@ -1,0 +1,169 @@
+[
+   {
+      "name": "Education",
+      "reference": "education",
+      "left": "educationLeft",
+      "right": "educationRight",
+      "results":[
+         {   
+            "name" : "Udacity",
+            "reference": "udacity",
+            "backgroundColor": "#33B5E5",
+            "backgroundImage": "./media/udacity_clear.png",
+            "backgroundSize": "60%",
+            "backgroundPosition": "top 25% center",
+            "degrees" : [
+               "Front-End Web Developer Nanodegree on a Google Scholorship", 
+               "Full Stack Web Developer Nanodegree"
+            ],
+            "image": "./media/front-end-certificate.png",
+            "image2": "./media/full-stack-certificate.png",
+            "duration" : "December 2017 - September 2018, November 2018 - Febuary 2019",
+            "comments": "To obtain the full Front-End Web Developer Nanodgree Scholorship through Google, I had to complete a 3-month challenge course and be within the top 10% of the 25,000 applicants."
+         },
+         {   
+            "name" : "Kansas State University",
+            "reference": "ksu",
+            "backgroundColor": "#512888",
+            "backgroundImage": "./media/kstate_clear.png",
+            "backgroundSize": "75%",
+            "backgroundPosition": "center",
+            "degrees" : [
+               "Bachelor of Science in Mathematics Education, Secondary"
+            ],
+            "image": "./media/ksu_diploma.jpeg",
+            "duration" : "January 2010 - December 2014",
+            "comments": "As electives, I took CIS 111: Intro to Programming & CIS 200: Programming Fundamentals."
+         },
+         {   
+            "name" : "Olathe North High School",
+            "reference": "ohns",
+            "backgroundColor": "#FFFFFF",
+            "backgroundImage": "./media/olatheNorth_clear.png",
+            "backgroundSize": "50%",
+            "backgroundPosition": "center",
+            "degrees" : [
+               "High School Diploma", 
+               "E-Communications Web Design Certificate"
+            ],
+            "image": "./media/onhs_diploma.jpeg",
+            "duration" : "August 2006 - May 2008",
+            "comments": "I was involved in a very unique E-Comm Web Design program. In this program, I learned some of the basics of web design and development and a lasting love for creating web content."
+         }
+      ]
+   },
+   {
+      "name": "Work Experience",
+      "reference": "experience",
+      "results" :[
+         {   
+            "name" : "USD 320: Wamego Middle School",
+            "reference": "usd320",
+            "backgroundColor": "#393939",
+            "backgroundImage": "./media/wamego_clear.png",
+            "backgroundSize": "130%",
+            "backgroundPosition": "right center",
+            "points" : [
+               "I have to keep track of student work and made sure students were doing well in school.",
+               "I work on the 6th grade team to plan and coordinate projects between classrooms and teachers."
+            ],
+            "duration" : "August 2015 - Present",
+            "position" : "Accelerated 6th Grade Math Teacher & 6th Grade Math Teacher",
+            "comments": null
+         },
+         {   
+            "name" : "USD 383: Manhattan High School",
+            "reference": "usd383",
+            "backgroundColor": "white",
+            "backgroundImage": "./media/mhs_clear.png",
+            "backgroundSize": "90%",
+            "backgroundPosition": "center",
+            "points" : [
+               "I had to understand and update IEP’s.",
+               "I kept track of student work to made sure students were doing well in school.",
+               "I co-taught an Algebra 1A course and independently taught an LI-Math course."
+            ],
+            "duration" : "December 2014 - May 2015",
+            "position" : "9th Grade SPED Teacher",
+            "comments": "My position here was understood to be temporary, as they had a teacher unexpectedly quit in the middle of the year. I was able to help them fill the void."
+         }
+      ]
+   },
+   {
+      "name": "Portfolio Projects",
+      "reference": "portfolio",
+      "results" :[
+         {   
+            "name" : "WMS Seminar Assignment",
+            "reference": "seminar",
+            "url": "http://skills-env.kypz3gx7bb.us-east-2.elasticbeanstalk.com",
+            "backgroundColor": "gray",
+            "backgroundImage": "./media/seminar_screenshot.png",
+            "backgroundSize": "100%",
+            "backgroundPosition": "top center",
+            "image": "./media/seminar_screenshot.png",
+            "points" : [
+               "Created with Flask and SQLAlchemy.",
+               "Coded with Python, HTML, Javascript, CSS",
+               "OAuth2 verification provided by Google. The user is then matched up with their records in the database.",
+               "Served on Amazon Web Services."
+            ],
+            "duration" : "Febuary 2019 - Present",
+            "comments": "You may visit the site, but you will not be able to access any of the information or use any of the functions of the site due to the fact that this site is being used by the school and contains sensitive information."
+         },
+         {   
+            "name" : "Full Stack Nanodegree Poject",
+            "reference": "udacity_fs_project",
+            "url": "http://catalog.us-east-2.elasticbeanstalk.com",
+            "backgroundColor": "gray",
+            "backgroundImage": "./media/catalog_screenshot.png",
+            "backgroundSize": "100%",
+            "backgroundPosition": "top center",
+            "image": "./media/catalog_screenshot.png",
+            "points" : [
+               "Created with Flask and SQLAlchemy.",
+               "Coded with Python, HTML, Javascript, CSS",
+               "OAuth2 verification provided by Google.",
+               "Served on Amazon Web Services."
+            ],
+            "duration" : "January 2019 - Present",
+            "comments": "You are welcome to visit the site, log in, and edit and delete departments and items as you wish."
+         },
+         {   
+            "name" : "Front-End Nanodegree Final Poject",
+            "reference": "udacity_fe_final",
+            "url": "https://ajrobin19.github.io/Project-2-Neighborhood-Map/",
+            "backgroundColor": "gray",
+            "backgroundImage": "./media/frontEndFinalProject_screenshot.png",
+            "backgroundSize": "100%",
+            "backgroundPosition": "top 5% center",
+            "image": "./media/frontEndFinalProject_screenshot.png",
+            "points" : [
+               "Created with React",
+               "Coded with Javascript, HTML, CSS",
+               "Uses Google Maps API for the map and the places information comes from the Yelp API",
+               "Served on Github."
+            ],
+            "duration" : "November 2018 - Present",
+            "comments": null
+         },
+         {   
+            "name" : "Portfolio/Resume Website",
+            "reference": "portfolio_resume",
+            "url": "https://ajrobin19.github.io/portfolio/",
+            "backgroundColor": "gray",
+            "backgroundImage": "./media/portfolio_screenshot.png",
+            "backgroundSize": "100%",
+            "backgroundPosition": "top center",
+            "image": "./media/portfolio_screenshot.png",
+            "points" : [
+               "Created with React",
+               "Coded with Javascript, HTML, CSS",
+               "Served on Github."
+            ],
+            "duration" : "November 2018 - Present",
+            "comments": null
+         }
+      ]
+   }
+]
