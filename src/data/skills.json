@@ -12,12 +12,12 @@
          "backgroundSize": "60%",
          "backgroundPosition": "top center",
          "tools" : [
-            ""
+            ["HTML Overall", 4],
+            ["Web Accessibility", 4],
+            ["ARIA", 4]
          ],
-         "image": "./media/front-end-certificate.png",
-         "image2": "./media/full-stack-certificate.png",
          "duration" : "August 2005 - Present",
-         "comments": "To obtain the full Front-End Web Developer Nanodgree Scholorship through Google, I had to complete a 3-month challenge course and be within the top 10% of the 25,000 applicants."
+         "comments": null
       },
       {   
          "name" : "Javascript",
@@ -27,14 +27,15 @@
          "backgroundSize": "80%",
          "backgroundPosition": "bottom 20% center",
          "tools" : [
-            "React",
-            "JQuery"
-
-
+            ["Javascript Overall", 4],
+            ["React",3],
+            ["JQuery",4],
+            ["Application Programming Interfaces (API)",4],
+            ["Asynchronous JavaScript",3],
+            ["AJAX",3]
          ],
-         "image": "./media/ksu_diploma.jpeg",
          "duration" : "January 2010 - Present",
-         "comments": "As electives, I took CIS 111: Intro to Programming & CIS 200: Programming Fundamentals."
+         "comments": null
       },
       {   
          "name" : "Python",
@@ -44,13 +45,16 @@
          "backgroundSize": "100%",
          "backgroundPosition": "center",
          "tools" : [
-            "High School Diploma", 
-            "E-Communications Web Design Certificate",
-            "Won a Pixel, top prize given at the annual eMagine Media Festival, in 2008 for Best Topic website."
+            ["Python Overall", 4],
+            ["Application Programming Interfaces (API)", 4],
+            ["Relational Databases", 4],
+            ["Python Database API", 4],
+            ["SQL", 4],
+            ["PostgreSQL", 4],
+            ["Authentication", 4]
          ],
-         "image": "./media/onhs_diploma.jpeg",
          "duration" : "November 2018 - Present",
-         "comments": "I was involved in a very unique E-Comm Web Design program. In this program, I learned some of the basics of web design and development and a lasting love for creating web content."
+         "comments": null
       },
       {   
          "name" : "CSS",
@@ -60,13 +64,12 @@
          "backgroundSize": "40%",
          "backgroundPosition": "top center",
          "tools" : [
-            "High School Diploma", 
-            "E-Communications Web Design Certificate",
-            "Won a Pixel, top prize given at the annual eMagine Media Festival, in 2008 for Best Topic website."
+            ["CSS Overall", 5],
+            ["IDs/Classes", 5],
+            ["Responsive Websites", 4]
          ],
-         "image": "./media/onhs_diploma.jpeg",
          "duration" : "August 2005 - Present",
-         "comments": "I was involved in a very unique E-Comm Web Design program. In this program, I learned some of the basics of web design and development and a lasting love for creating web content."
+         "comments": null
       },
       {   
          "name" : "Other",
@@ -77,13 +80,18 @@
          "backgroundPosition": "center",
          "tools" : [
             ["Git", 4],
-            ["Github", 3],
+            ["Github", 4],
             ["Unixshell", 3],
-            ["Linux Server", 1]
+            ["Linux Server", 2],
+            ["Transmission Control Protocol (TCP)", 3],
+            ["RESTful API", 3],
+            ["Vagrant", 4],
+            ["Linux Server", 2],
+            ["Apache", 2],
+            ["Service Workers", 3]
          ],
-         "image": "./media/onhs_diploma.jpeg",
          "duration" : "August 2006 - May 2008",
-         "comments": "I was involved in a very unique E-Comm Web Design program. In this program, I learned some of the basics of web design and development and a lasting love for creating web content."
+         "comments": null
       }
    ]
 }

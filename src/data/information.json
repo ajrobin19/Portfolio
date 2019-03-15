@@ -131,6 +131,22 @@
             "comments": "You are welcome to visit the site, log in, and edit and delete departments and items as you wish."
          },
          {   
+            "name" : "Memory Game",
+            "reference": "memory",
+            "url": "https://ajrobin19.github.io/Project-2-Memory-Game/",
+            "backgroundColor": "gray",
+            "backgroundImage": "./media/memory_screenshot.png",
+            "backgroundSize": "100%",
+            "backgroundPosition": "top center",
+            "image": "./media/memory_screenshot.png",
+            "points" : [
+               "Coded with Javascript, HTML, CSS",
+               "Served on Github."
+            ],
+            "duration" : "June 2018 - Present",
+            "comments": "I did not create the basic layout, but I did create the rest of the code, including adding more CSS styles."
+         },
+         {   
             "name" : "Front-End Nanodegree Final Poject",
             "reference": "udacity_fe_final",
             "url": "https://ajrobin19.github.io/Project-2-Neighborhood-Map/",
@@ -151,7 +167,7 @@
          {   
             "name" : "Portfolio/Resume Website",
             "reference": "portfolio_resume",
-            "url": "https://ajrobin19.github.io/portfolio/",
+            "url": "https://adam-robinson-portfolio.herokuapp.com/",
             "backgroundColor": "gray",
             "backgroundImage": "./media/portfolio_screenshot.png",
             "backgroundSize": "100%",

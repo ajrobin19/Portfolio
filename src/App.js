@@ -101,6 +101,24 @@ class App extends Component {
     }
   }
 
+  rating = (rating) => {
+    if(rating === 0){
+      return <span><FontAwesomeIcon icon={['far', 'star']} /><FontAwesomeIcon icon={['far', 'star']} /><FontAwesomeIcon icon={['far', 'star']} /><FontAwesomeIcon icon={['far', 'star']} /><FontAwesomeIcon icon={['far', 'star']} /></span>;
+    }else if(rating === 1){
+      return <span><FontAwesomeIcon icon={['fas', 'star']} /><FontAwesomeIcon icon={['far', 'star']} /><FontAwesomeIcon icon={['far', 'star']} /><FontAwesomeIcon icon={['far', 'star']} /><FontAwesomeIcon icon={['far', 'star']} /></span>;
+    }else if(rating === 2){
+      return <span><FontAwesomeIcon icon={['fas', 'star']} /><FontAwesomeIcon icon={['fas', 'star']} /><FontAwesomeIcon icon={['far', 'star']} /><FontAwesomeIcon icon={['far', 'star']} /><FontAwesomeIcon icon={['far', 'star']} /></span>;
+    }else if(rating === 3){
+      return <span><FontAwesomeIcon icon={['fas', 'star']} /><FontAwesomeIcon icon={['fas', 'star']} /><FontAwesomeIcon icon={['fas', 'star']} /><FontAwesomeIcon icon={['far', 'star']} /><FontAwesomeIcon icon={['far', 'star']} /></span>;
+    }else if(rating === 4){
+      return <span><FontAwesomeIcon icon={['fas', 'star']} /><FontAwesomeIcon icon={['fas', 'star']} /><FontAwesomeIcon icon={['fas', 'star']} /><FontAwesomeIcon icon={['fas', 'star']} /><FontAwesomeIcon icon={['far', 'star']} /></span>;
+    }else if(rating === 5){
+      return <span><FontAwesomeIcon icon={['fas', 'star']} /><FontAwesomeIcon icon={['fas', 'star']} /><FontAwesomeIcon icon={['fas', 'star']} /><FontAwesomeIcon icon={['fas', 'star']} /><FontAwesomeIcon icon={['fas', 'star']} /></span>;
+    }else
+      return <span>*unrated*</span>;
+    
+  }
+
   render() {
     return (
       <div className="App">
@@ -150,9 +168,7 @@ class App extends Component {
                 {this.infoObject[results.reference] &&
                 <div id={results.reference +"info"} className="info" >
                   <div className="exit" onClick={e => {this.makeFalse(results.reference); this.forceUpdate()}}>X</div>
-                  {results.url && results.image && <a className="degree" href={results.url} target="_blank"><img  src={results.image} alt={results.name +" Degree"} /><span className='enlarge'><FontAwesomeIcon icon={['fas', 'search-plus']} /></span></a>}
-                  {!results.url && results.image && <span className="degree"><img  src={results.image} alt={results.name +" Degree"} /><span className='enlarge'><FontAwesomeIcon icon={['fas', 'search-plus']} /></span></span>}
-                  {results.image2 && <span className="degree2"><img src={results.image2} alt={results.name +" Degree"} /><span className='enlarge'><FontAwesomeIcon icon={['fas', 'search-plus']} /></span></span>}
+                  
                   {results.name && <h1 style={{marginTop: 0}}>{results.name}</h1>}
                   {results.url && <h3><a href={results.url} target="_blank">{results.url}</a></h3>}
                   {results.duration && <h3>{results.duration}</h3>}
@@ -166,6 +182,9 @@ class App extends Component {
                   <br />
                   <br />
                   {results.comments && <p>{results.comments}</p>}
+                  {results.url && results.image && <a className="degree" href={results.url} target="_blank"><img  src={results.image} alt={results.name +" Degree"} /><span className='enlarge'><FontAwesomeIcon icon={['fas', 'search-plus']} /></span></a>}
+                  {!results.url && results.image && <span className="degree"><img  src={results.image} alt={results.name +" Degree"} /><span className='enlarge'><FontAwesomeIcon icon={['fas', 'search-plus']} /></span></span>}
+                  {results.image2 && <span className="degree2"><img src={results.image2} alt={results.name +" Degree"} /><span className='enlarge'><FontAwesomeIcon icon={['fas', 'search-plus']} /></span></span>}
                 </div>
               }
               </div>
@@ -195,19 +214,16 @@ class App extends Component {
                 {this.infoObject[results.reference] &&
                 <div id={results.reference +"info"} className="info" >
                   <div className="exit" onClick={e => {this.makeFalse(results.reference); this.forceUpdate()}}>X</div>
-                  {results.url && results.image && <a className="degree" href={results.url} target="_blank"><img  src={results.image} alt={results.name +" Degree"} /><span className='enlarge'><FontAwesomeIcon icon='search-plus' /></span></a>}
-                  {!results.url && results.image && <span className="degree"><img  src={results.image} alt={results.name +" Degree"} /><span className='enlarge'><FontAwesomeIcon icon='search-plus' /></span></span>}
-                  {results.image2 && <span className="degree2"><img src={results.image2} alt={results.name +" Degree"} /><span className='enlarge'><FontAwesomeIcon icon='search-plus' /></span></span>}
                   {results.name && <h1 style={{marginTop: 0}}>{results.name}</h1>}
-                  {results.url && <h3><a href={results.url} target="_blank">{results.url}</a></h3>}
                   {results.duration && <h3>{results.duration}</h3>}
                   <br />
                   <br />
-                  {results.degrees && results.degrees.map((deg)=><h4>{deg}</h4>)}
-                  {results.position && <h3>{results.position}</h3>}
-                  {results.position && results.position.endsWith("Teacher") && <h4>As a teacher at this school...</h4>}
-                  {results.position && !results.position.endsWith("Teacher") && <h4>As an employee at this company...</h4>}
-                  {results.points && results.points.map((point)=><h4><li>{point}</li></h4>)}
+                  {results.tools && <h4>The following are tools/skills that I have learned along with how I would rate myself at that tool/skill:</h4>}
+                  {results.tools && <ul className='rankingsList'>
+                    {results.tools.map((tool)=>
+                      <h4><li>{tool[0]}<span className="tab">{this.rating(tool[1])}</span></li></h4>)}
+                    </ul>
+                  }
                   <br />
                   <br />
                   {results.comments && <p>{results.comments}</p>}

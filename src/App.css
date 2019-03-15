@@ -228,6 +228,12 @@ Body
 .degree:hover>.enlarge, .degree2:hover>.enlarge{
   display: none;
 }
+.tab{
+  margin-left: 20px;
+}
+.rankingsList{
+  list-style: none;
+}
 /*
 Screen Breaks
 */
@@ -238,6 +244,19 @@ Screen Breaks
 }
 
 @media screen and (max-width: 749px) {
+  .degree, .degree2{
+    position: static;
+    margin: 10px auto;
+  }
+
+  .degree img:hover, .degree2 img:hover{
+    width: 100%;
+  }
+
+  .info p{
+    width: 100%;
+  }
+
   #topInfo{
     top: 4em;
     padding: 10px;
