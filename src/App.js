@@ -5,11 +5,11 @@ import skills from '../src/data/skills.json';
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSearchPlus as enlarge, faStar as wholeStar} from '@fortawesome/free-solid-svg-icons'
+import { faSearchPlus as enlarge, faStar as wholeStar, faExternalLinkAlt as externalLink} from '@fortawesome/free-solid-svg-icons'
 import { faStar as hollowStar } from '@fortawesome/free-regular-svg-icons'
 import { faGithubSquare as github, faLinkedin as linkedin, faFacebookSquare as facebook } from '@fortawesome/free-brands-svg-icons'
 
-library.add(enlarge, wholeStar, hollowStar, github, linkedin, facebook)
+library.add(enlarge, wholeStar,externalLink, hollowStar, github, linkedin, facebook)
 
 class App extends Component {
 
@@ -170,8 +170,10 @@ class App extends Component {
                   <div className="exit" onClick={e => {this.makeFalse(results.reference); this.forceUpdate()}}>X</div>
                   
                   {results.name && <h1 style={{marginTop: 0}}>{results.name}</h1>}
-                  {results.url && <h3><a href={results.url} target="_blank">{results.url}</a></h3>}
                   {results.duration && <h3>{results.duration}</h3>}
+                  {results.url && <h3><a href={results.url} target="_blank"><FontAwesomeIcon icon={['fas', 'external-link-alt']} /><span className="tab">{results.url}</span></a></h3>}
+                  {results.giturl && <h5><a href={results.giturl} target="_blank"><FontAwesomeIcon icon={['fab', 'github-square']} size="2x" /><span className="tab">{results.giturl}</span></a></h5>}
+                  
                   <br />
                   <br />
                   {results.degrees && results.degrees.map((deg)=><h4>{deg}</h4>)}
