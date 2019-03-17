@@ -74,6 +74,10 @@ class App extends Component {
   changeMenuBackground = (e) => {
     var menu = document.getElementById('menu')
 
+    if(!e.path[1].pageYOffset && e.path[1].pageYOffset !== 0){
+      return
+    }
+
     if(e.path[1].pageYOffset > 5 && menu.style.backgroundColor === 'transparent'){
       menu.animate([{'background': 'transparent'},{'background': '#141414'}],1000)
       menu.style.backgroundColor = '#141414'
@@ -89,16 +93,6 @@ class App extends Component {
 
   makeFalse = (category) => {
     this.infoObject[category] = false;
-  }
-
-  showInfo = (category) => {
-    if(category === 'portfolio'){
-      return this.portfolio;
-    } else if (category === 'experience'){
-      return this.experience;
-    } else if (category === 'education'){
-      return this.education;
-    }
   }
 
   rating = (rating) => {
@@ -124,16 +118,17 @@ class App extends Component {
       <div className="App">
         <div id="menu" style={{backgroundColor: "transparent"}}>
           {/* logo created at https://fontmeme.com/netflix-font/ */}
-          <img className="logo" src="./media/redLogo.png" alt="Adam Robinson" border="0" />
+          <img className="logo" src="./media/other/topImage/redLogo.png" alt="Adam Robinson" border="0" />
         </div>
         
         <div id="top">
-          <video autoPlay loop id="video-background" muted>
-            <source src="./media/typing2.mp4" type="video/mp4" />
-          </video>
+          {/*<video autoPlay loop id="video-background" poster="./media/other/topImage/typing_screenshot.png" muted>
+            <source src="./media/other/videos/typing2.mp4" type="video/mp4" />
+          </video> */}
+        <img id="video-background" src="./media/other/topImage/typing_screenshot.png"/ >
           <div id="topInfo">
             {/* logo created at https://fontmeme.com/netflix-font/ */}
-            <img className="logo" src="./media/whiteLogo.png" alt="Adam Robinson" border="0"/>
+            <img className="logo" src="./media/other/topImage/whiteLogo.png" alt="Adam Robinson" border="0"/>
             <h3>913.787.6177</h3>
             <h3>ajrobin@me.com</h3>
             <div className="icons">
@@ -151,10 +146,10 @@ class App extends Component {
               <div id={category.reference+"section"} className="section" onMouseEnter={e => this.showArrows(category.reference)} onMouseLeave={e => this.hideArrows(category.reference)}>
                 <div id={category.reference} className="row">
                   <div id={category.reference+"Left"} className="scrollButton left" onMouseEnter={e => this.scroll('left', category.reference)} onMouseLeave={e => this.cancelScroll()}>
-                    <img src="./media/Arrow-Left-icon.png" alt="Left Scroll Button"/>
+                    <img src="./media/other/topImage/Arrow-Left-icon.png" alt="Left Scroll Button"/>
                   </div>
                   <div id={category.reference+"Right"} className="scrollButton right" onMouseEnter={e => this.scroll('right', category.reference)} onMouseLeave={e => this.cancelScroll()}>
-                    <img src="./media/Arrow-Right-icon.png" alt="Left Scroll Button"/>
+                    <img src="./media/other/topImage/Arrow-Right-icon.png" alt="Left Scroll Button"/>
                   </div>
                   {category.results !== undefined && category.results.map((results) =>
                     <div id={results.reference} className="column" onClick={e => {this.makeTrue(results.reference); document.getElementById(results.reference).scrollIntoView(); this.forceUpdate()}} style={{backgroundColor: results.backgroundColor, backgroundImage: 'url('+results.backgroundImage+')', backgroundSize: results.backgroundSize, backgroundPosition: results.backgroundPosition, backgroundRepeat: 'no-repeat'}}>
@@ -199,10 +194,10 @@ class App extends Component {
               <div id={skills.reference+"section"} className="section" onMouseEnter={e => this.showArrows(skills.reference)} onMouseLeave={e => this.hideArrows(skills.reference)}>
                 <div id={skills.reference} className="row">
                   <div id={skills.reference+"Left"} className="scrollButton left" onMouseEnter={e => this.scroll('left', skills.reference)} onMouseLeave={e => this.cancelScroll()}>
-                    <img src="./media/Arrow-Left-icon.png" alt="Left Scroll Button"/>
+                    <img src="./media/other/topImage/Arrow-Left-icon.png" alt="Left Scroll Button"/>
                   </div>
                   <div id={skills.reference+"Right"} className="scrollButton right" onMouseEnter={e => this.scroll('right', skills.reference)} onMouseLeave={e => this.cancelScroll()}>
-                    <img src="./media/Arrow-Right-icon.png" alt="Left Scroll Button"/>
+                    <img src="./media/other/topImage/Arrow-Right-icon.png" alt="Left Scroll Button"/>
                   </div>
                   {skills.results !== undefined && skills.results.map((results) =>
                     <div id={results.reference} className="column" onClick={e => {this.makeTrue(results.reference); document.getElementById(results.reference).scrollIntoView(); this.forceUpdate()}} style={{backgroundColor: results.backgroundColor, backgroundImage: 'url('+results.backgroundImage+')', backgroundSize: results.backgroundSize, backgroundPosition: results.backgroundPosition, backgroundRepeat: 'no-repeat'}}>

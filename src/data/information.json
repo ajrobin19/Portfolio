@@ -9,15 +9,15 @@
             "name" : "Udacity",
             "reference": "udacity",
             "backgroundColor": "#33B5E5",
-            "backgroundImage": "./media/udacity_clear.png",
+            "backgroundImage": "./media/education/topImage/udacity_clear_small.png",
             "backgroundSize": "60%",
             "backgroundPosition": "top 25% center",
             "degrees" : [
                "Front-End Web Developer Nanodegree on a Google Scholorship", 
                "Full Stack Web Developer Nanodegree"
             ],
-            "image": "./media/front-end-certificate.png",
-            "image2": "./media/full-stack-certificate.png",
+            "image": "./media/education/secondaryImage/front-end-certificate_small.png",
+            "image2": "./media/education/secondaryImage/full-stack-certificate_small.png",
             "duration" : "December 2017 - September 2018, November 2018 - Febuary 2019",
             "comments": "To obtain the full Front-End Web Developer Nanodgree Scholorship through Google, I had to complete a 3-month challenge course and be within the top 10% of the 25,000 applicants."
          },
@@ -25,13 +25,13 @@
             "name" : "Kansas State University",
             "reference": "ksu",
             "backgroundColor": "#512888",
-            "backgroundImage": "./media/kstate_clear.png",
+            "backgroundImage": "./media/education/topImage/kstate_clear_small.png",
             "backgroundSize": "75%",
             "backgroundPosition": "center",
             "degrees" : [
                "Bachelor of Science in Mathematics Education, Secondary"
             ],
-            "image": "./media/ksu_diploma.jpeg",
+            "image": "./media/education/secondaryImage/ksu_diploma_small.jpeg",
             "duration" : "January 2010 - December 2014",
             "comments": "As electives, I took CIS 111: Intro to Programming & CIS 200: Programming Fundamentals. I also compiled and produced the EDCEP 525 Course eBook."
          },
@@ -39,7 +39,7 @@
             "name" : "Olathe North High School",
             "reference": "ohns",
             "backgroundColor": "#FFFFFF",
-            "backgroundImage": "./media/olatheNorth_clear.png",
+            "backgroundImage": "./media/education/topImage/olatheNorth_clear_small.png",
             "backgroundSize": "50%",
             "backgroundPosition": "center",
             "degrees" : [
@@ -47,7 +47,7 @@
                "E-Communications Web Design Certificate",
                "Won a Pixel, top prize given at the annual eMagine Media Festival, in 2008 for Best Topic website."
             ],
-            "image": "./media/onhs_diploma.jpeg",
+            "image": "./media/education/secondaryImage/onhs_diploma_small.jpeg",
             "duration" : "August 2006 - May 2008",
             "comments": "I was involved in a very unique E-Comm Web Design program. In this program, I learned some of the basics of web design and development and a lasting love for creating web content."
          }
@@ -61,7 +61,7 @@
             "name" : "USD 320: Wamego Middle School",
             "reference": "usd320",
             "backgroundColor": "#393939",
-            "backgroundImage": "./media/wamego_clear.png",
+            "backgroundImage": "./media/experience/topImage/wamego_clear_small.png",
             "backgroundSize": "130%",
             "backgroundPosition": "right center",
             "points" : [
@@ -76,7 +76,7 @@
             "name" : "USD 383: Manhattan High School",
             "reference": "usd383",
             "backgroundColor": "white",
-            "backgroundImage": "./media/mhs_clear.png",
+            "backgroundImage": "./media/experience/topImage/mhs_clear_small.png",
             "backgroundSize": "90%",
             "backgroundPosition": "center",
             "points" : [
@@ -100,10 +100,10 @@
             "url": "http://skills-env.kypz3gx7bb.us-east-2.elasticbeanstalk.com",
             "giturl":"https://github.com/ajrobin19/skills",
             "backgroundColor": "gray",
-            "backgroundImage": "./media/seminar_screenshot.png",
+            "backgroundImage": "./media/portfolio/topImage/seminar_screenshot_small.png",
             "backgroundSize": "100%",
             "backgroundPosition": "top center",
-            "image": "./media/seminar_screenshot.png",
+            "image": "./media/portfolio/topImage/seminar_screenshot_small.png",
             "points" : [
                "Created with Flask and SQLAlchemy.",
                "Coded with Python, HTML, Javascript, CSS",
@@ -119,10 +119,10 @@
             "url": "http://catalog.us-east-2.elasticbeanstalk.com",
             "giturl":"https://github.com/ajrobin19/catalog",
             "backgroundColor": "gray",
-            "backgroundImage": "./media/catalog_screenshot.png",
+            "backgroundImage": "./media/portfolio/topImage/catalog_screenshot_small.png",
             "backgroundSize": "100%",
             "backgroundPosition": "top center",
-            "image": "./media/catalog_screenshot.png",
+            "image": "./media/portfolio/topImage/catalog_screenshot_small.png",
             "points" : [
                "Created with Flask and SQLAlchemy.",
                "Coded with Python, HTML, Javascript, CSS",
@@ -138,10 +138,10 @@
             "url": "https://ajrobin19.github.io/Project-2-Memory-Game/",
             "giturl":"https://github.com/ajrobin19/Project-2-Memory-Game",
             "backgroundColor": "gray",
-            "backgroundImage": "./media/memory_screenshot.png",
+            "backgroundImage": "./media/portfolio/topImage/memory_screenshot_small.png",
             "backgroundSize": "100%",
             "backgroundPosition": "top center",
-            "image": "./media/memory_screenshot.png",
+            "image": "./media/portfolio/topImage/memory_screenshot_small.png",
             "points" : [
                "Coded with Javascript, HTML, CSS",
                "Served on Github."
@@ -155,10 +155,10 @@
             "url": "https://ajrobin19.github.io/Project-2-Neighborhood-Map/",
             "giturl":"https://github.com/ajrobin19/Project-2-Neighborhood-Map",
             "backgroundColor": "gray",
-            "backgroundImage": "./media/frontEndFinalProject_screenshot.png",
+            "backgroundImage": "./media/portfolio/topImage/frontEndFinalProject_screenshot_small.png",
             "backgroundSize": "100%",
             "backgroundPosition": "top 5% center",
-            "image": "./media/frontEndFinalProject_screenshot.png",
+            "image": "./media/portfolio/topImage/frontEndFinalProject_screenshot_small.png",
             "points" : [
                "Created with React",
                "Coded with Javascript, HTML, CSS",
@@ -174,10 +174,10 @@
             "url": "https://adam-robinson-portfolio.herokuapp.com/",
             "giturl":"https://github.com/ajrobin19/portfolio",
             "backgroundColor": "gray",
-            "backgroundImage": "./media/portfolio_screenshot.png",
+            "backgroundImage": "./media/portfolio/topImage/portfolio_screenshot_small.png",
             "backgroundSize": "100%",
             "backgroundPosition": "top center",
-            "image": "./media/portfolio_screenshot.png",
+            "image": "./media/portfolio/topImage/portfolio_screenshot_small.png",
             "points" : [
                "Created with React",
                "Coded with Javascript, HTML, CSS",

@@ -8,7 +8,7 @@
          "name" : "HTML",
          "reference": "html",
          "backgroundColor": "#4796D7",
-         "backgroundImage": "./media/html.png",
+         "backgroundImage": "./media/skills/topImage/html_small.png",
          "backgroundSize": "60%",
          "backgroundPosition": "top center",
          "tools" : [
@@ -23,7 +23,7 @@
          "name" : "Javascript",
          "reference": "javascript",
          "backgroundColor": "#F7E14B",
-         "backgroundImage": "./media/javascript.png",
+         "backgroundImage": "./media/skills/topImage/javascript_small.png",
          "backgroundSize": "80%",
          "backgroundPosition": "bottom 20% center",
          "tools" : [
@@ -41,7 +41,7 @@
          "name" : "Python",
          "reference": "python",
          "backgroundColor": "#FFFFFF",
-         "backgroundImage": "./media/python.png",
+         "backgroundImage": "./media/skills/topImage/python_small.png",
          "backgroundSize": "100%",
          "backgroundPosition": "center",
          "tools" : [
@@ -60,7 +60,7 @@
          "name" : "CSS",
          "reference": "css",
          "backgroundColor": "#D5D5D1",
-         "backgroundImage": "./media/css.svg",
+         "backgroundImage": "./media/skills/topImage/css_small.png",
          "backgroundSize": "40%",
          "backgroundPosition": "top center",
          "tools" : [
@@ -74,8 +74,8 @@
       {   
          "name" : "Other",
          "reference": "other",
-         "backgroundColor": "#D5D5D1",
-         "backgroundImage": "./media/coding.png",
+         "backgroundColor": "#88A550",
+         "backgroundImage": "./media/skills/topImage/coding_small.png",
          "backgroundSize": "90%",
          "backgroundPosition": "center",
          "tools" : [
