@@ -74,7 +74,10 @@ class App extends Component {
   changeMenuBackground = (e) => {
     var menu = document.getElementById('menu')
 
-    if(!e.path[1].pageYOffset && e.path[1].pageYOffset !== 0){
+    try{
+      e.path[1].pageYOffset
+    }catch(){
+      menu.style.backgroundColor = '#141414'
       return
     }
 
