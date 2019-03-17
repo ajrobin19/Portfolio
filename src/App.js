@@ -75,18 +75,16 @@ class App extends Component {
     var menu = document.getElementById('menu')
 
     try{
-      e.path[1].pageYOffset
-    }catch(){
+      if(e.path[1].pageYOffset > 5 && menu.style.backgroundColor === 'transparent'){
+        menu.animate([{'background': 'transparent'},{'background': '#141414'}],1000)
+        menu.style.backgroundColor = '#141414'
+      }else if(e.path[1].pageYOffset <= 5 && menu.style.backgroundColor === 'rgb(20, 20, 20)'){
+        menu.animate([{'background': '#141414'},{'background': 'transparent'}],1000)
+        menu.style.backgroundColor = 'transparent'
+      }
+    }catch(error){
       menu.style.backgroundColor = '#141414'
       return
-    }
-
-    if(e.path[1].pageYOffset > 5 && menu.style.backgroundColor === 'transparent'){
-      menu.animate([{'background': 'transparent'},{'background': '#141414'}],1000)
-      menu.style.backgroundColor = '#141414'
-    }else if(e.path[1].pageYOffset <= 5 && menu.style.backgroundColor === 'rgb(20, 20, 20)'){
-      menu.animate([{'background': '#141414'},{'background': 'transparent'}],1000)
-      menu.style.backgroundColor = 'transparent'
     }
   }
 
@@ -128,16 +126,16 @@ class App extends Component {
           {/*<video autoPlay loop id="video-background" poster="./media/other/topImage/typing_screenshot.png" muted>
             <source src="./media/other/videos/typing2.mp4" type="video/mp4" />
           </video> */}
-        <img id="video-background" src="./media/other/topImage/typing_screenshot.png"/ >
+        <img id="video-background" src="./media/other/topImage/typing_screenshot.png" alt="Code Writing"/ >
           <div id="topInfo">
             {/* logo created at https://fontmeme.com/netflix-font/ */}
             <img className="logo" src="./media/other/topImage/whiteLogo.png" alt="Adam Robinson" border="0"/>
             <h3>913.787.6177</h3>
             <h3>ajrobin@me.com</h3>
             <div className="icons">
-              <a className="fai" href="https://www.linkedin.com/in/adam-robinson-090b1914a/" target="_blank"><FontAwesomeIcon icon={['fab', 'linkedin']} size='2x' /></a>
-              <a className="fai" href="https://github.com/ajrobin19/" target="_blank"><FontAwesomeIcon icon={['fab', 'github-square']} size='2x' /></a>
-              <a className="fai" href="https://www.facebook.com/adam.robinson/" target="_blank"><FontAwesomeIcon icon={['fab', 'facebook-square']} size='2x' /></a>
+              <a className="fai" href="https://www.linkedin.com/in/adam-robinson-090b1914a/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={['fab', 'linkedin']} size='2x' /></a>
+              <a className="fai" href="https://github.com/ajrobin19/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={['fab', 'github-square']} size='2x' /></a>
+              <a className="fai" href="https://www.facebook.com/adam.robinson/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={['fab', 'facebook-square']} size='2x' /></a>
             </div>
           </div>
         </div>
@@ -169,8 +167,8 @@ class App extends Component {
                   
                   {results.name && <h1 style={{marginTop: 0}}>{results.name}</h1>}
                   {results.duration && <h3>{results.duration}</h3>}
-                  {results.url && <h3><a href={results.url} target="_blank"><FontAwesomeIcon icon={['fas', 'external-link-alt']} /><span className="tab">{results.url}</span></a></h3>}
-                  {results.giturl && <h5><a href={results.giturl} target="_blank"><FontAwesomeIcon icon={['fab', 'github-square']} size="2x" /><span className="tab">{results.giturl}</span></a></h5>}
+                  {results.url && <h3><a href={results.url} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={['fas', 'external-link-alt']} /><span className="tab">{results.url}</span></a></h3>}
+                  {results.giturl && <h5><a href={results.giturl} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={['fab', 'github-square']} size="2x" /><span className="tab">{results.giturl}</span></a></h5>}
                   
                   <br />
                   <br />
@@ -182,7 +180,7 @@ class App extends Component {
                   <br />
                   <br />
                   {results.comments && <p>{results.comments}</p>}
-                  {results.url && results.image && <a className="degree" href={results.url} target="_blank"><img  src={results.image} alt={results.name +" Degree"} /><span className='enlarge'><FontAwesomeIcon icon={['fas', 'search-plus']} /></span></a>}
+                  {results.url && results.image && <a className="degree" href={results.url} target="_blank" rel="noopener noreferrer"><img  src={results.image} alt={results.name +" Degree"} /><span className='enlarge'><FontAwesomeIcon icon={['fas', 'search-plus']} /></span></a>}
                   {!results.url && results.image && <span className="degree"><img  src={results.image} alt={results.name +" Degree"} /><span className='enlarge'><FontAwesomeIcon icon={['fas', 'search-plus']} /></span></span>}
                   {results.image2 && <span className="degree2"><img src={results.image2} alt={results.name +" Degree"} /><span className='enlarge'><FontAwesomeIcon icon={['fas', 'search-plus']} /></span></span>}
                 </div>
