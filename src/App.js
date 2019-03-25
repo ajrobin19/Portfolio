@@ -30,14 +30,18 @@ class App extends Component {
     for (var [id, bool] of entries) {
       if (bool){
         this.infoObject[id] = false;
-        
-        for (var path of e.path){
-          var oldId = path.id.substring(0, path.id.length -4);
-          if (id = oldId){
-            this.infoObject[id] = true;
-            break;
+        if (e.path !== undefined){
+          for (var path of e.path){
+            if (path.id !== undefined){
+              var oldId = path.id.substring(0, path.id.length -4);
+              if (id === oldId){
+                this.infoObject[id] = true;
+                break;
+              }
+            }
           }
         }
+        
       }
     }
     this.forceUpdate()
@@ -142,7 +146,7 @@ class App extends Component {
 
         <div id="bottom">
           {jsonData !== undefined && jsonData.map((category) =>
-            <div id={category.name}>
+            <div key={category.name} id={category.name}>
               <h1>{category.name}</h1>
               <div id={category.reference+"section"} className="section" onMouseEnter={e => this.showArrows(category.reference)} onMouseLeave={e => this.hideArrows(category.reference)}>
                 <div id={category.reference} className="row">
@@ -153,14 +157,14 @@ class App extends Component {
                     <img src="./media/other/topImage/Arrow-Right-icon.png" alt="Left Scroll Button"/>
                   </div>
                   {category.results !== undefined && category.results.map((results) =>
-                    <div id={results.reference} className="column" onClick={e => {this.makeTrue(results.reference); document.getElementById(results.reference).scrollIntoView(); this.forceUpdate()}} style={{backgroundColor: results.backgroundColor, backgroundImage: 'url('+results.backgroundImage+')', backgroundSize: results.backgroundSize, backgroundPosition: results.backgroundPosition, backgroundRepeat: 'no-repeat'}}>
+                    <div key={results.reference} id={results.reference} className="column" onClick={e => {this.makeTrue(results.reference); document.getElementById(results.reference).scrollIntoView(); this.forceUpdate()}} style={{backgroundColor: results.backgroundColor, backgroundImage: 'url('+results.backgroundImage+')', backgroundSize: results.backgroundSize, backgroundPosition: results.backgroundPosition, backgroundRepeat: 'no-repeat'}}>
                       <p>{results.name}</p>
                     </div>
                   )}
                 </div>
               </div>
               {category.results.map((results) =>
-                <div>
+                <div key={results.reference +"info"}>
                 {this.infoObject[results.reference] &&
                 <div id={results.reference +"info"} className="info" >
                   <div className="exit" onClick={e => {this.makeFalse(results.reference); this.forceUpdate()}}>X</div>
@@ -172,11 +176,11 @@ class App extends Component {
                   
                   <br />
                   <br />
-                  {results.degrees && results.degrees.map((deg)=><h4>{deg}</h4>)}
+                  {results.degrees && results.degrees.map((deg)=><h4 key={deg+"Name"}>{deg}</h4>)}
                   {results.position && <h3>{results.position}</h3>}
                   {results.position && results.position.endsWith("Teacher") && <h4>As a teacher at this school...</h4>}
                   {results.position && !results.position.endsWith("Teacher") && <h4>As an employee at this company...</h4>}
-                  {results.points && results.points.map((point)=><h4><li>{point}</li></h4>)}
+                  {results.points && results.points.map((point)=><h4 key={point}><li>{point}</li></h4>)}
                   <br />
                   <br />
                   {results.comments && <p>{results.comments}</p>}
@@ -201,14 +205,14 @@ class App extends Component {
                     <img src="./media/other/topImage/Arrow-Right-icon.png" alt="Left Scroll Button"/>
                   </div>
                   {skills.results !== undefined && skills.results.map((results) =>
-                    <div id={results.reference} className="column" onClick={e => {this.makeTrue(results.reference); document.getElementById(results.reference).scrollIntoView(); this.forceUpdate()}} style={{backgroundColor: results.backgroundColor, backgroundImage: 'url('+results.backgroundImage+')', backgroundSize: results.backgroundSize, backgroundPosition: results.backgroundPosition, backgroundRepeat: 'no-repeat'}}>
+                    <div key={results.reference} id={results.reference} className="column" onClick={e => {this.makeTrue(results.reference); document.getElementById(results.reference).scrollIntoView(); this.forceUpdate()}} style={{backgroundColor: results.backgroundColor, backgroundImage: 'url('+results.backgroundImage+')', backgroundSize: results.backgroundSize, backgroundPosition: results.backgroundPosition, backgroundRepeat: 'no-repeat'}}>
                       <p>{results.name}</p>
                     </div>
                   )}
                 </div>
               </div>
               {skills.results.map((results) =>
-                <div>
+                <div key={results.reference +"info"}>
                 {this.infoObject[results.reference] &&
                 <div id={results.reference +"info"} className="info" >
                   <div className="exit" onClick={e => {this.makeFalse(results.reference); this.forceUpdate()}}>X</div>
@@ -219,7 +223,7 @@ class App extends Component {
                   {results.tools && <h4>The following are tools/skills that I have learned along with how I would rate myself at that tool/skill:</h4>}
                   {results.tools && <ul className='rankingsList'>
                     {results.tools.map((tool)=>
-                      <h4><li>{tool[0]}<span className="tab">{this.rating(tool[1])}</span></li></h4>)}
+                      <h4 key={tool[0]}><li>{tool[0]}<span className="tab">{this.rating(tool[1])}</span></li></h4>)}
                     </ul>
                   }
                   <br />
