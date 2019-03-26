@@ -102,7 +102,7 @@
             "giturl":"https://github.com/ajrobin19/skills",
             "backgroundColor": "gray",
             "backgroundImage": "./media/portfolio/topImage/seminar_screenshot_small.png",
-            "backgroundSize": "100%",
+            "backgroundSize": "cover",
             "backgroundPosition": "top center",
             "image": "./media/portfolio/topImage/seminar_screenshot_small.png",
             "points" : [
@@ -121,7 +121,7 @@
             "giturl":"https://github.com/ajrobin19/catalog",
             "backgroundColor": "gray",
             "backgroundImage": "./media/portfolio/topImage/catalog_screenshot_small.png",
-            "backgroundSize": "100%",
+            "backgroundSize": "cover",
             "backgroundPosition": "top center",
             "image": "./media/portfolio/topImage/catalog_screenshot_small.png",
             "points" : [
@@ -140,7 +140,7 @@
             "giturl":"https://github.com/ajrobin19/Project-2-Memory-Game",
             "backgroundColor": "gray",
             "backgroundImage": "./media/portfolio/topImage/memory_screenshot_small.png",
-            "backgroundSize": "100%",
+            "backgroundSize": "cover",
             "backgroundPosition": "top center",
             "image": "./media/portfolio/topImage/memory_screenshot_small.png",
             "points" : [
@@ -157,7 +157,7 @@
             "giturl":"https://github.com/ajrobin19/Project-2-Neighborhood-Map",
             "backgroundColor": "gray",
             "backgroundImage": "./media/portfolio/topImage/frontEndFinalProject_screenshot_small.png",
-            "backgroundSize": "100%",
+            "backgroundSize": "cover",
             "backgroundPosition": "top 5% center",
             "image": "./media/portfolio/topImage/frontEndFinalProject_screenshot_small.png",
             "points" : [
@@ -176,7 +176,7 @@
             "giturl":"https://github.com/ajrobin19/portfolio",
             "backgroundColor": "gray",
             "backgroundImage": "./media/portfolio/topImage/portfolio_screenshot_small.png",
-            "backgroundSize": "100%",
+            "backgroundSize": "cover",
             "backgroundPosition": "top center",
             "image": "./media/portfolio/topImage/portfolio_screenshot_small.png",
             "points" : [
